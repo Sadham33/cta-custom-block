@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CTA Block</title>
+    <link rel="stylesheet" href="index.css"/>
+    <script>
+      function changeColor(val){
+        document.getElementById('text-input-id-3').value = val;
+        console.log(document.getElementById('text-input-id-3').value);
+      }
+    </script>
+	</head>
+	<body>
+		<article class="slds-card">
+  <div class="slds-card__header slds-grid">
+    <header class="slds-media slds-media_center slds-has-flexi-truncate">
+      <div class="slds-media__body">
+        <h2>
+            <span class="slds-text-heading_small">CTA Block</span>
+        </h2>
+      </div>
+    </header>
+  </div>
+  <div class="slds-card__body slds-card__body_inner">
+  <div id="workspace">
+    <span id='text-input-id-3'></span>
+    <div class="slds-form-element__label">   <div class="box" style="margin-bottom: 15px;display:inline">Background colour options : </div> <button class="color-palette" onclick="changeColor('#FFFFFF')" style="background-color: #FFFFFF ;"></button><button class="color-palette" onclick="changeColor('#F5F7FB')" style="background-color: #F5F7FB ;"></button><button class="color-palette" onclick="changeColor('#019CDE')" style="background-color: #019CDE ;"></button></button><button class="color-palette" onclick="changeColor('#FF9600')" style="background-color: #FF9600 ;"></button><button class="color-palette" onclick="changeColor('#00CF91')" style="background-color: #00CF91 ;"></button></div>
+    
+			<div class="slds-form-element">
+				<label class="slds-form-element__label" for="text-input-id-1">Button Text</label>
+				<div class="slds-form-element__control">
+					<textarea rows="4" id="text-input-id-1" class="slds-textarea"></textarea>
+				</div>
+				<label class="slds-form-element__label" for="text-input-id-1">Button Link</label>
+				<div class="slds-form-element__control">
+					<textarea rows="2" id="text-input-id-2" class="slds-textarea"></textarea>
+				</div>
+
+			</div>
+		</div>
+  </div>
+</article>
+		
+		<script src="./main.js"></script>
+	</body>
+</html>
