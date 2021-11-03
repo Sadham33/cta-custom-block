@@ -72,7 +72,7 @@ __webpack_require__(1);
 var SDK = __webpack_require__(19);
 var sdk = new SDK(null, null, true); // 3rd argument true bypassing https requirement: not prod worthy
 
-var address = 'Login button text here', button = '#', color, styl, width, height, zoom, link, mapsKey;
+var address = 'Login button', button = '#', color, styl, width, height, zoom, link, mapsKey;
 
 function debounce (func, wait, immediate) {
 	var timeout;
@@ -91,7 +91,7 @@ function debounce (func, wait, immediate) {
 
 function paintSettings () {
 	//document.getElementById('text-input-id-0').value = mapsKey;
-	document.getElementById('text-input-id-1').value = address ? address : 'Login button text here';
+	document.getElementById('text-input-id-1').value = address ? address : 'Login button';
 	document.getElementById('text-input-id-2').value = button ? button : '#';
 	document.getElementById('text-input-id-3').value = color ? color : '#f5f7fa';
 }
